@@ -1,0 +1,16 @@
+include: package:flutter_lints/flutter.yaml
+
+linter:
+  rules:
+    - camel_case_types
+    - camel_case_extensions
+    - library_names
+    - file_names
+    - library_private_types_in_public_api
+    - avoid_empty_else
+    - avoid_print
+    - prefer_const_constructors
+    - unnecessary_statements
+
+analyzer:
+  exclude: [build/*, .dart_tool/*]

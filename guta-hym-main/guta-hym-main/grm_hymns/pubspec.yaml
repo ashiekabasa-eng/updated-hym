@@ -1,0 +1,50 @@
+name: grm_hymns
+description: "GUTA RA MWARI HYM Book - Offline Christian Hymnbook for Android. Features multilingual hymns in Shona, Ndebele, and Tswana."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # State management & local persistence
+  shared_preferences: ^2.2.2
+
+  # Encryption and utilities
+  crypto: ^3.0.3
+  intl: ^0.20.2
+
+  # Material Design 3
+  flutter_localizations:
+    sdk: flutter
+  url_launcher: ^6.1.10
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_launcher_icons: ^0.13.1
+
+
+
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/data/hymns.json
+    - assets/data/zvimiso.json
+    - assets/data/order_of_service.json
+    - assets/data/days_of_service.json
+    - assets/data/prayers.json
+    - assets/images/logo.png
+    - assets/images/icon.png
+
+flutter_icons:
+  android: true
+  ios: false
+  image_path: assets/images/icon.png
